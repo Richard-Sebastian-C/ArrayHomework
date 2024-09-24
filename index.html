@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArraysHomework</title>
+</head>
+<body style="background-color: azure;">
+    <h1>
+        <u>Arrays Add and Remove</u>
+    </h1>
+    <h2>Original</h2>
+    <p id = "first"></p>
+    <h2>Add 5 new</h2>
+    <p id = "second"></p>
+    <h2>Take away 2</h2>
+    <p id = "third"></p>
+    <h2>Min</h2>
+    <p id = "min"></p>
+    <h2>Max</h2>
+    <p id = "max"></p>
+    <script>
+        //initialize
+        var array = [1, 4, 5, 7, 999, 90, 80, 34, 56, 12];
+        document.getElementById("first").innerHTML = array;
+        //add
+        array.push(20, 57, 1000, 800, 250);
+        document.getElementById("second").innerHTML = array;
+        //remove
+        array.pop();
+        array.pop();
+        document.getElementById("third").innerHTML = array;
+        //min
+        var minmumNumber = Math.min.apply(Math, array);
+        document.getElementById("min").innerHTML = minmumNumber;
+        //max
+        var maxiumNumber = Math.max.apply(Math, array);
+        document.getElementById("max").innerHTML = maxiumNumber;
+    </script>
+    <style>
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
